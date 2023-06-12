@@ -6,7 +6,8 @@ import {
     FaTwitter,
     FaFacebookF,
     FaInstagram,
-    FaTiktok
+    FaTiktok,
+    FaGithub
 } from 'react-icons/fa'
 
 import {
@@ -21,6 +22,7 @@ import {
 import {
     SlPaypal
 } from 'react-icons/sl'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     const form = useRef()
@@ -45,10 +47,21 @@ const Footer = () => {
                 <p className='text-white text-sm tracking-wide'>© License 2023</p>
                 <img src={paymentImg} alt='paymentImg' className='w-40' />
                 <div className='flex gap-4 text-lg text-slate-400'>
+                <Link to={'https://twitter.com'} target="_blank">
                     <FaTwitter className='hover:text-white duration-300 cursor-pointer'/>
+                </Link>
+                <Link to={'https://www.facebook.com'} target="_blank">
                     <FaFacebookF className='hover:text-white duration-300 cursor-pointer'/>
+                </Link>
+                <Link to={'https://www.instagram.com'} target="_blank">
                     <FaInstagram className='hover:text-white duration-300 cursor-pointer'/>
+                </Link>
+                <Link to={'https://www.tiktok.com'} target="_blank">
                     <FaTiktok className='hover:text-white duration-300 cursor-pointer'/>
+                </Link>
+                <Link to={'https://github.com/Jxrgee8/TFG_22-23.git'} target="_blank">
+                    <FaGithub className='hover:text-white duration-300 cursor-pointer'/>
+                </Link>
                 </div>
             </div>
             {/* ########## Sobre Nosotros ########## */}
@@ -64,14 +77,18 @@ const Footer = () => {
             <div>
                 <h2 className='text-2xl font-semibold text-white mb-4'>Opciones de Usuario</h2>
                 <div className='flex flex-col gap-2 text-base'>
-                    <p className='flex items-center gap-2 hover:text-white duration-300 cursor-pointer'>
-                        <span><BsPersonFill size={18}/></span>
-                        Mi Usuario
-                    </p>
-                    <p className='flex items-center gap-2 hover:text-white duration-300 cursor-pointer'>
-                        <span><SlPaypal size={18}/></span>
-                        Pago
-                    </p>
+                    <Link to={'/login'}>
+                        <p className='flex items-center gap-2 hover:text-white duration-300 cursor-pointer'>
+                            <span><BsPersonFill size={18}/></span>
+                            Mi Usuario
+                        </p>
+                    </Link>
+                    <Link to={'https://stripe.com/es'} target="_blank">
+                        <p className='flex items-center gap-2 hover:text-white duration-300 cursor-pointer'>
+                            <span><SlPaypal size={18}/></span>
+                            Pago
+                        </p>
+                    </Link>
                     <p className='flex items-center gap-2 hover:text-white duration-300 cursor-pointer'>
                         <span><BiPackage size={20}/></span>
                         Seguimiento de pedidos

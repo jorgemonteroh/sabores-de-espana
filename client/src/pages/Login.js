@@ -47,15 +47,16 @@ const Login = () => {
 
     return (
         <div>
+        <img src='https://webgradients.com/public/webgradients_png/087%20Alchemist%20Lab.png' alt='cestaImg' className='w-full h-60 object-cover' />
             <div className='w-full flex flex-col items-center justify-center gap-10 py-16'>
                 <div className='w-full flex items-center justify-center gap-14'>
-                    <div onClick={userLogin} className='w-64 h-14 text-base tracking-wide border-[2px] border-slate-400 rounded-md flex items-center justify-center gap-2
-                    hover:border-green-400 hover:bg-slate-100 cursor-pointer duration-300'>
+                    <div onClick={userLogin} className='w-64 h-14 text-base tracking-wide border-[2px] bg-green-400 border-slate-600 rounded-md flex items-center justify-center gap-2
+                    hover:border-green-400 hover:bg-slate-300 cursor-pointer duration-300'>
                         <img src={googleImg} alt='googleImg' className='w-9' />
-                        <span className='text-sm text-slate-500'>Iniciar sesión con Google</span>
+                        <span className='text-sm text-black -500'>Iniciar sesión con Google</span>
                     </div>
                     <button onClick={userLogout} className='w-36 h-14 text-base tracking-wide border-[2px] bg-black text-white rounded-md flex items-center justify-center gap-2
-                    hover:border-slate-400 hover:bg-green-400 cursor-pointer duration-300'>Cerrar Sesión</button>
+                    hover:border-black hover:bg-slate-400 cursor-pointer duration-300'>Cerrar Sesión</button>
                 </div>
             </div>
             <ToastContainer

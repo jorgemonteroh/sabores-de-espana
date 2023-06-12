@@ -7,7 +7,7 @@ const Banner = () => {
         'https://webgradients.com/public/webgradients_png/011%20Dusty%20Grass.png',
         'https://webgradients.com/public/webgradients_png/023%20Rare%20Wind.png',
         'https://webgradients.com/public/webgradients_png/073%20Love%20Kiss.png',
-        'https://webgradients.com/public/webgradients_png/089%20Premium%20White.png'
+        'https://webgradients.com/public/webgradients_png/004%20Juicy%20Peach.png'
        
        /* 'https://wptravel.io/wp-content/uploads/edd/2019/03/stripe-banner.jpg'*/
     ]

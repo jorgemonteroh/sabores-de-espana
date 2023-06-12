@@ -12,6 +12,7 @@ import Cesta from './pages/Cesta';
 import { datosProductos } from './api/Api'
 import Producto from './components/Producto';
 import Login from './pages/Login';
+import About from './components/About';
 
 const Layout = () => {
   return (
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         path: '/',
         element:<Inicio />,
         loader: datosProductos
+      },
+      {
+        path: '/about',
+        element:<About />
       },
       {
         path: '/product/:id',

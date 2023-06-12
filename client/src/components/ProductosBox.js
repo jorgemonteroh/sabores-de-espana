@@ -29,14 +29,14 @@ const ProductosBox = ({producto}) => {
       <div onClick={detallesProductos} className='w-full h-96 cursor-pointer overflow-hidden'>
         <img src={producto.image} alt='productoImg' className='w-full h-full object-cover group-hover:scale-100 duration-500'/>
       </div>
-      <div className='w-full border-[1px] px-2 py-4'>
+      <div className='w-full h2 border-[1px] px-2 py-4'>
         <div className='flex justify-between items-center'>
           <div>
-              <h2 className='text-base font-bold'>{producto.title.substring(0, 15)}</h2>
+              <h2 className='text-base font-bold'>{producto.title.substring(0, 25)}</h2>
           </div>
           <div className='relative flex justify-end gap-2 overflow-hidden w-28 text-sm'>
-            <div className='flex gap-2 justify-end group-hover:translate-x-28 transition-transform duration-500'>
-              <p className='line-through text-slate-300'>{producto.oldPrice}€</p>
+            <div className='flex gap-2 pr-1 justify-end group-hover:translate-x-28 transition-transform duration-500'>
+              <p className='line-through text-slate-300'>{producto.oldPrice}</p>
               <p className='font-semibold'>{producto.price}€</p>
             </div>
             <p 
@@ -52,9 +52,9 @@ const ProductosBox = ({producto}) => {
                 })
               ) & toast.success(`${producto.title} añadido a la cesta`)
             } 
-            className='absolute flex w-[120px] z-20 items-center text-slate-500 gap-1 top-0 transform -translate-x-32
+            className='absolute flex w-[80px] z-20 items-center text-slate-500 gap-1 top-0 transform -translate-x-32
             hover:text-slate-800 group-hover:translate-x-3 transition-transform cursor-pointer duration-500 text-sm'>
-              Añadir cesta {" "}
+              Añadir {" "}
               <span>
                 <BsArrowRight />
               </span>
@@ -66,7 +66,7 @@ const ProductosBox = ({producto}) => {
         </div>
         <div className='absolute top-4 right-0'>
           {
-            producto.isNew && <p className='bg-black text-white font-semibold px-6 py-1'>Sale</p>
+            producto.isNew && <p className='bg-black text-white font-semibold px-6 py-1'>Oferta</p>
           }
         </div>
       </div>

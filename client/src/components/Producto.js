@@ -20,7 +20,7 @@ const Producto = () => {
                 <img src={detalles.image} alt='prodImg' className='w-full h-[500px] object-cover' />
                 <div className='absolute top-4 right-0'>
                 { detalles.isNew && (
-                    <p className='bg-black text-white font-semibold px-6 py-1'>Sale</p>
+                    <p className='bg-black text-white font-semibold px-6 py-1'>Oferta</p>
                 )} 
                 </div>
             </div>

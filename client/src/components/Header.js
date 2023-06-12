@@ -15,22 +15,17 @@ const Header = () => {
                     </div>
                 </Link>
                 <div className='flex items-center gap-8'>
-                    <ul className='flex items-center gap-8'>
-                        <li className='text-base text-black font-bold 
-                        hover:text-green-400 hover:underline underline-offset-2 
-                        decoration-[1px] cursor-pointer duration-300'>Inicio</li>
-                        <li className='text-base text-black font-bold 
-                        hover:text-green-400 hover:underline underline-offset-2 
-                        decoration-[1px] cursor-pointer duration-300'>Páginas</li>
-                        <li className='text-base text-black font-bold 
-                        hover:text-green-400 hover:underline underline-offset-2 
-                        decoration-[1px] cursor-pointer duration-300'>Productos</li>
-                        <li className='text-base text-black font-bold 
-                        hover:text-green-400 hover:underline underline-offset-2 
-                        decoration-[1px] cursor-pointer duration-300'>Elementos</li>
-                        <li className='text-base text-black font-bold 
-                        hover:text-green-400 hover:underline underline-offset-2 
-                        decoration-[1px] cursor-pointer duration-300'>Blog</li>
+                    <ul className='flex items-center gap-8 pr-52'>
+                        <Link to='/'>
+                            <li className='text-base text-black font-bold 
+                            hover:text-green-400 hover:underline underline-offset-2 
+                            decoration-[1px] cursor-pointer duration-300'>Inicio</li>
+                        </Link>
+                        <Link to='/about'>
+                            <li className='text-base text-black font-bold 
+                            hover:text-green-400 hover:underline underline-offset-2 
+                            decoration-[1px] cursor-pointer duration-300'>Sobre Nosotros</li>
+                        </Link>
                     </ul>
                     <Link to='/cesta'>
                         <div className='relative'>

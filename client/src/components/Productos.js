@@ -11,7 +11,9 @@ const Productos = ({productos}) => {
             <span className='w-20 h-[5px] bg-black' />
             <p className='max-w-[700px] text-slate-400 text-center'>
                 Adquiere los productos de mayor calidad de toda España al mejor precio.
+                Productos de todo tipo con los mejores ingredientes.
             </p>
+            <span className='w-44 h-[5px] bg-black' />
         </div>
         <div className='max-w-screen-xl mx-auto py-10 grid grid-cols-4 gap-10'>
             {
