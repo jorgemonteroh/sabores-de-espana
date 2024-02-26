@@ -30,5 +30,5 @@ npm start
 ![Captura de pantalla 2023-06-12 233643](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/17140934-8f7a-465b-b51f-cd612e42c569)
 ![Captura de pantalla 2023-06-12 233734](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/9edc6624-6b92-4282-ac0a-059be1ac01d0)
 ![Captura de pantalla 2023-06-12 234431](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/4f9a9e87-3090-4337-8220-ce58b1bafc3d)
-![Captura de pantalla 2023-06-12 234149](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/244436fe-6590-4b83-aaf9-555cfb72a674)
+![Captura de pantalla 2023-06-12 234149](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/ce9be687-0d24-41db-a8bf-e018b35c633d)
 
