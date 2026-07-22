@@ -1,48 +1,151 @@
-# TFG DAM CURSO 2022/23
+# 🛒 Sabores de España
 
-## Aplicación Web de Comercio Electrónico de venta de productos españoles:
-- Distintos productos a elegir mediante una api rest de Vercel.
-- Información personalizada de los productos.
-- Base de datos de usuarios con Google Firebase.
-- Manejo de sesión de usuario con Google Firebase.
-- Plataforma de pago integrada con Stripe.
-- Manejo de rutas y objetos de sesión con React.
-- Diseño cliente-servidor.
+E-commerce de venta de productos alimenticios españoles. Desarrollado como **Proyecto Final de Ciclo (DAM)** con arquitectura cliente-servidor, pasarela de pago real y autenticación con Firebase.
 
-### Tecnologías:
-- Node JS
-- JavaScript
-- Tailwind.CSS
-- React / redux
-- Google Firebase
-- Vercel
-- Stripe
+---
 
-### Para visualizar el proyecto:
-- Instalar node.js (https://nodejs.org/es/download)
-- Abrir en Terminal la carpeta `client` y ejecutar:
-npm start 
-- Abrir en Terminal la carpeta `server` y ejecutar:
+## 🛠 Stack tecnológico
+
+| Categoría | Tecnología |
+|---|---|
+| Frontend | React · Redux · Tailwind CSS |
+| Backend | Node.js · API REST |
+| Autenticación | Google Firebase |
+| Base de datos | Google Firebase Realtime Database |
+| Pasarela de pago | Stripe |
+| Despliegue API | Vercel |
+| Control de versiones | Git · GitHub |
+
+---
+
+## ✨ Funcionalidades principales
+
+- **Catálogo de productos** — listado de productos españoles (embutidos, quesos, vinos...) organizados por Comunidad Autónoma, servidos desde una API REST desplegada en Vercel
+- **Página de producto** — información detallada de cada artículo
+- **Carrito de compra** — gestión de productos con Redux
+- **Proceso de pago** — integración real con **Stripe**
+- **Autenticación de usuarios** — registro e inicio de sesión con **Google Firebase**
+- **Perfil de usuario** — datos personales y país de origen/residencia
+- **Diseño responsive** — adaptado a cualquier dispositivo con Tailwind CSS
+- **Arquitectura desacoplada** — frontend y backend en repositorios/carpetas independientes
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+TFG_22-23/
+├── client/          → Aplicación React (frontend)
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/       # Store y slices
+│   │   └── firebase.js  # Configuración Firebase
+│   └── package.json
+└── server/          → API REST Node.js (backend)
+    ├── server.js
+    └── package.json
+```
+
+---
+
+## 🚀 Cómo ejecutarlo en local
+
+### Requisitos previos
+- [Node.js](https://nodejs.org/es/download)
+- Cuenta de [Firebase](https://firebase.google.com) con proyecto creado
+- Cuenta de [Stripe](https://stripe.com) con claves de prueba
+
+### 1. Clona el repositorio
+
+```bash
+git clone https://github.com/jorgemonteroh/TFG_22-23.git
+cd TFG_22-23
+```
+
+### 2. Configura las variables de entorno
+
+**En `/client`**, crea un archivo `.env`:
+```env
+REACT_APP_FIREBASE_API_KEY=tu_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=tu_proyecto.firebaseapp.com
+REACT_APP_FIREBASE_DATABASE_URL=https://tu_proyecto.firebaseio.com
+REACT_APP_FIREBASE_PROJECT_ID=tu_proyecto
+REACT_APP_STRIPE_PUBLIC_KEY=pk_test_...
+```
+
+**En `/server`**, crea un archivo `.env`:
+```env
+STRIPE_SECRET_KEY=sk_test_...
+```
+
+### 3. Arranca el frontend
+
+```bash
+cd client
+npm install
 npm start
+```
 
-### Vista del proyecto:
-1. Inicio\
-![Captura de pantalla 2023-06-12 232636](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/e2109c09-cb99-4d39-bbe5-50aee7221dee)
-![Captura de pantalla 2023-06-12 233643](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/17140934-8f7a-465b-b51f-cd612e42c569)
-![Captura de pantalla 2023-06-12 233734](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/9edc6624-6b92-4282-ac0a-059be1ac01d0)
+### 4. Arranca el backend
 
-2. Sobre Nosotros\
-![Captura de pantalla 2023-06-12 234149](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/ce9be687-0d24-41db-a8bf-e018b35c633d)
+```bash
+cd server
+npm install
+npm start
+```
 
-3. Login / Registro\
-![Captura de pantalla 2023-06-12 234552](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/8dd28765-3d0e-4d58-a268-df7534597415)
-![Captura de pantalla 2023-06-13 182529](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/8664c129-5c9c-4246-b588-a3d3332de5de)
-![Captura de pantalla 2023-06-13 190848](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/1fbb150b-4c02-43e5-992e-6fdb73421959)
+La aplicación estará disponible en `http://localhost:3000`
 
-4. Producto y Compra\
-![Captura de pantalla 2023-06-12 234431](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/4f9a9e87-3090-4337-8220-ce58b1bafc3d)
-![Captura de pantalla 2023-06-13 183815](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/261c2378-a3a1-43fb-8e41-25ee885c13eb)
-![Captura de pantalla 2023-06-13 184015](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/376848a6-ed9f-494b-9223-72d539c83912)
-![Captura de pantalla 2023-06-13 184208](https://github.com/Jxrgee8/TFG_22-23/assets/91729151/c2fd9153-73c2-4adf-8641-aa17430269b7)
+---
 
+## 📸 Vista del proyecto
 
+**Inicio**
+
+![Inicio](https://github.com/jorgemonteroh/TFG_22-23/assets/91729151/e2109c09-cb99-4d39-bbe5-50aee7221dee)
+
+**Catálogo de productos**
+
+![Productos](https://github.com/jorgemonteroh/TFG_22-23/assets/91729151/17140934-8f7a-465b-b51f-cd612e42c569)
+
+**Ficha de producto**
+
+![Producto](https://github.com/jorgemonteroh/TFG_22-23/assets/91729151/4f9a9e87-3090-4337-8220-ce58b1bafc3d)
+
+**Proceso de compra**
+
+![Compra](https://github.com/jorgemonteroh/TFG_22-23/assets/91729151/376848a6-ed9f-494b-9223-72d539c83912)
+
+**Login / Registro**
+
+![Login](https://github.com/jorgemonteroh/TFG_22-23/assets/91729151/8dd28765-3d0e-4d58-a268-df7534597415)
+
+---
+
+## 💡 Decisiones técnicas
+
+**¿Por qué arquitectura cliente-servidor separada?**
+Separar el frontend en React del backend en Node.js permite que cada parte escale de forma independiente y que la API pueda ser consumida por otros clientes en el futuro (app móvil, etc.).
+
+**¿Por qué Redux para el carrito?**
+El estado del carrito necesita ser accesible desde múltiples componentes (cabecera, página de producto, checkout). Redux centraliza ese estado y evita el prop drilling.
+
+**¿Por qué Firebase para la autenticación?**
+Firebase Auth gestiona registro, login y sesión de forma segura sin necesidad de implementar un sistema propio, permitiendo centrarse en la lógica de negocio.
+
+**¿Por qué Stripe?**
+Es el estándar en integración de pagos para aplicaciones web. Permite procesar pagos reales con mínima configuración y máxima seguridad, sin almacenar datos de tarjeta en el servidor propio.
+
+**¿Por qué Vercel para la API?**
+Despliegue gratuito, integración directa con GitHub y latencia mínima para APIs REST sin estado.
+
+---
+
+## 📄 Licencia
+
+MIT — libre para usar y modificar.
+
+---
+
+*Desarrollado por [Jorge Montero](https://linkedin.com/in/jorgemonteroholgado) · Proyecto Final de Ciclo DAM · IES Gonzalo Chacón · 2023*
