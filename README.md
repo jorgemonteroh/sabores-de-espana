@@ -59,8 +59,8 @@ TFG_22-23/
 ### 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/jorgemonteroh/TFG_22-23.git
-cd TFG_22-23
+git clone https://github.com/jorgemonteroh/sabores-de-espana.git
+cd sabores-de-espana
 ```
 
 ### 2. Configura las variables de entorno
